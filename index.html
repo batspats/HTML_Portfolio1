@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form Test</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Mages Guild </h1>
+    <p id="description" class="description text-center">
+      Dedicated to magical advancement in Tamriel
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="novice">Novice</option>
+        <option value="job">Apprentice</option>
+        <option value="master">Master </option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend the Balmora Mages Guild to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What do you hope to gain from your time with the Mages Guild?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">I want to unravel mysteries</option>
+        <option value="projects">I want to bend the will of those around me</option>
+        <option value="community">I want to use the power of ice and fire</option>
+        <option value="openSource">I'm just curious</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to learn more about?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="alteration"
+          type="checkbox"
+          class="input-checkbox"
+        />Alteration</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="conjuration"
+          type="checkbox"
+          class="input-checkbox"
+        />Conjuration</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="illusion"
+          type="checkbox"
+          class="input-checkbox"
+        />Illusion</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="mysticism"
+          type="checkbox"
+          class="input-checkbox"
+        />Mysticism</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="restoration"
+          type="checkbox"
+          class="input-checkbox"
+        />Restoration</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="thaumaturgy"
+          type="checkbox"
+          class="input-checkbox"
+        />Thaumaturgy</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="alchemy"
+          type="checkbox"
+          class="input-checkbox"
+        />Alchemy</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="enchantment"
+          type="checkbox"
+          class="input-checkbox"
+        />Enchantment</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="daedric"
+          type="checkbox"
+          class="input-checkbox"
+        />Daedric</label
+      >
+          <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Courses</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
